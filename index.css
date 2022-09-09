@@ -1,0 +1,190 @@
+/* Main styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-grid-container {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1200px;
+  background-color: #E6E5F4;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Header style */
+
+.header {
+  margin: 20px 0 30px;
+}
+
+.main-title {
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.header-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  row-gap: 8px;
+}
+
+.button {
+  background-color: #78C99A;
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  transition: transform;
+  transition-duration: 500ms;
+}
+
+.button:hover {
+  transform: scale(1.2,1.2);
+  background-color: #abb430;
+}
+
+/* Main styles */
+
+.section-block {
+  width: 200px;
+  height: 200px;
+  background-color: #540B82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+  transition: transform;
+  transition-duration: 2000ms;  
+}
+
+.section-block:hover {
+  transform: rotate(180deg);
+}
+
+.section-news {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.animation {
+  margin-top: 20px;
+}
+
+
+.container-animation {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  animation: run 10000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.ball:hover {
+  animation-play-state: paused;
+}
+
+/* Ball animation */
+
+@keyframes run {
+
+  0% {
+    left: 0px;
+    bottom: 0px;
+  }
+
+  10% {
+    left: 10%;
+    bottom: 200px;
+    background-color: #9b3218;
+  }
+
+  20% {
+    left: 20%;
+    bottom: 0px;
+    background-color: #fbff00;
+  }
+
+  30% {
+    left: 30%;
+    bottom: 200px;
+    background-color: #d400ff;
+  }
+
+  40% {
+    left: 40%;
+    bottom: 0px;
+    background-color: #3cff00;
+  }
+
+  50% {
+    left: 50%;
+    bottom: 200px;
+    background-color: #071108;
+  }
+
+  60% {
+    left: 60%;
+    bottom: 0px;
+    background-color: #d1d1e0;
+  }
+
+  70% {
+    left: 70%;
+    bottom: 200px;
+    background-color: #00e1ff;
+  }
+
+  80% {
+    left: 80%;
+    bottom: 0px;
+    background-color: #4d2f92;
+  }
+
+  90% {
+    left: 90%;
+    bottom: 200px;
+    background-color: #ffae00;
+  }
+
+  100% {
+    left: 100%;
+    bottom: 0px;
+    background-color: #d30c0c;
+  }
+}
+
+
